@@ -284,7 +284,7 @@ int bitNor(int x, int y)
  */
 int bitOr(int x, int y)
 {
-    return 42;
+    return ~((~x) & (~y));
 }
 
 /*
