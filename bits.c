@@ -125,7 +125,8 @@ int absVal(int x)
  */
 int addOK(int x, int y)
 {
-    return 42;
+    int z = x + y;
+    return !(((x ^ z) & (y ^ z)) >> 31);
 }
 
 /*
